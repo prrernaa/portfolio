@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb37b87da7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer </p>
+                <h1>Hi, I'm <span>Prerna</span><br> From India </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo/aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final-year computer science engineering student 🎓 with aspirations of becoming a future software engineer 👨‍💻. Throughout my college journey, I have internalized a profound lesson: the significance of coding 💻. As a recent graduate in Full Stack Development 🚀, I am driven by an unwavering passion for crafting dynamic web applications 🌐. I am currently on the lookout for opportunities to embark on my career journey, eager to channel my skills and contribute to meaningful projects 🌟.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web </span><br>Designing Web/App interfaces</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>INTERNSHIP</span><br>web development and designing at CODECASA</li>
+                            <li><span>TRANING</span><br>Full Stack Web Development Internship with DevTown</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2024</span><br>Computer Science Engineering at GITM</li>
+                            <li><span>2020</span><br>12<suoerscript>th</suoerscript> from CBSE Board with 95.6%</li>
+                            <li><span>2018</span><br>10<suoerscript>th</suoerscript> from CBSE Board with 80.1%</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p></p>
+                    <a href="#"> learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                    <a href="#"> learn more </a>
+                </div>
+                <div>
+                    <h2>Content Writing</h2>
+                    <p></p>
+                    <a href="#"> learn more </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photo/todo.png" alt="">
+                    <div class="layer">
+                        <h3>TaskMaster</h3>
+                        <p>TaskMaster is a modern and intuitive to-do list website designed to help users manage their tasks and boost productivity. With a sleek and user-friendly interface, TaskMaster allows users to easily create, organize, and prioritize tasks.</p>
+                        <a href="https://github.com/prrernaa/to_do_list"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo/movie.png" alt="">
+                    <div class="layer">
+                        <h3>CineBook - Innovative Movie Booking Application</h3>
+                        <p> CineBook is an innovative and user-friendly movie booking application, designed to showcase my skills in software development and user experience (UX) design. This project demonstrates my ability to create a seamless and efficient platform for users to discover movies, book tickets, and enjoy a hassle-free cinema experience.</p>
+                        <a href="https://github.com/prrernaa/movie-booking-application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo/tic-tac-toe.png" alt="">
+                    <div class="layer">
+                        <h3>T3: Interactive Tic-Tac-Toe Game </h3>
+                        <p>T3 is an interactive and engaging implementation of the classic Tic-Tac-Toe game, designed to showcase my programming and game development skills. This project demonstrates my ability to create a fun and functional game that users can enjoy playing in fun way.</p>
+                        <a href="https://github.com/prrernaa/tic_tac_toe-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo/login.png" alt="">
+                    <div class="layer">
+                        <h3>BootstrapLogin - Stylish and Responsive Login Page</h3>
+                        <p> BootstrapLogin is a showcase of my front-end development skills, focusing on creating a sleek and responsive login page using the popular Bootstrap framework. This project demonstrates my ability to create a visually appealing and user-friendly interface for user authentication.</p>
+                        <a href="https://github.com/prrernaa/bootstrap_login_page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo/insta.png" alt="">
+                    <div class="layer">
+                        <h3>InstaClone - A Social Media Sharing Platform</h3>
+                        <p> InstaClone is a conceptual project that demonstrates my expertise in web development and user interface (UI) design by creating a clone of the popular social media platform, Instagram. This project showcases my skills in building a dynamic and visually appealing platform for sharing photos, videos, and engaging with other users.</p>
+                        <a href="https://github.com/prrernaa/instagram-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photo/zomato.png" alt="">
+                    <div class="layer">
+                        <h3> Zomato Eats Landing Page Redesign</h3>
+                        <p>The Zomato Eats Landing Page Redesign is a conceptual project aimed at enhancing the user experience and visual appeal of the Zomato website's landing page. Zomato is a popular online platform that provides information about restaurants, cafes, and food delivery options. The redesign focuses on creating a more engaging and user-friendly interface for visitors.</p>
+                        <a href="https://github.com/prrernaa/zomato-landing-page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>prernajangra@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9416556960</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="prerna_ Resume .pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @prerna . Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classlist.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwl5-7CtTmNjOCtL40Pl3SyvmZSaV0qdXtEC2Rdq2xpMPBE7ft_UYhaKeO0f4uneWky/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
